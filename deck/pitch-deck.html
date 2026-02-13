@@ -411,6 +411,7 @@
         <div class="nav-dot" data-slide="4"></div>
         <div class="nav-dot" data-slide="5"></div>
         <div class="nav-dot" data-slide="6"></div>
+        <div class="nav-dot" data-slide="7"></div>
       </div>
       <button class="arrow">&#8594;</button>
     </div>
@@ -480,6 +481,7 @@
         <div class="nav-dot" data-slide="4"></div>
         <div class="nav-dot" data-slide="5"></div>
         <div class="nav-dot" data-slide="6"></div>
+        <div class="nav-dot" data-slide="7"></div>
       </div>
       <button class="arrow">&#8594;</button>
     </div>
@@ -545,6 +547,7 @@
         <div class="nav-dot" data-slide="4"></div>
         <div class="nav-dot" data-slide="5"></div>
         <div class="nav-dot" data-slide="6"></div>
+        <div class="nav-dot" data-slide="7"></div>
       </div>
       <button class="arrow">&#8594;</button>
     </div>
@@ -644,6 +647,7 @@
         <div class="nav-dot" data-slide="4"></div>
         <div class="nav-dot" data-slide="5"></div>
         <div class="nav-dot" data-slide="6"></div>
+        <div class="nav-dot" data-slide="7"></div>
       </div>
       <button class="arrow">&#8594;</button>
     </div>
@@ -746,6 +750,7 @@
         <div class="nav-dot active" data-slide="4"></div>
         <div class="nav-dot" data-slide="5"></div>
         <div class="nav-dot" data-slide="6"></div>
+        <div class="nav-dot" data-slide="7"></div>
       </div>
       <button class="arrow">&#8594;</button>
     </div>
@@ -872,13 +877,14 @@
         <div class="nav-dot" data-slide="4"></div>
         <div class="nav-dot active" data-slide="5"></div>
         <div class="nav-dot" data-slide="6"></div>
+        <div class="nav-dot" data-slide="7"></div>
       </div>
       <button class="arrow">&#8594;</button>
     </div>
   </div>
 
   <!-- ═══════════════════════════════════════════ -->
-  <!-- SLIDE 6 — POC IN ACTION                      -->
+  <!-- SLIDE 6 — POC: PASSENGER ONBOARDING FLOW    -->
   <!-- ═══════════════════════════════════════════ -->
   <div class="slide content-slide" id="slide-6">
     <div class="vueling-logo"><div class="dot"></div><span class="name">Vueling</span></div>
@@ -891,97 +897,228 @@
     </div>
 
     <div class="slide-body">
-      <div class="section-label">POC in Action</div>
-      <h2>The pilot is live. See it working.</h2>
+      <div class="section-label">POC in Action &mdash; Passenger Onboarding</div>
+      <h2>From booking to verified &mdash; four screens, zero friction.</h2>
+      <p class="lead" style="margin-bottom:10px;">
+        Right after booking, the passenger completes onboarding: <strong>opt-in, delivery preference, document upload, and AI verification</strong>. Four real screens from the running POC.
+      </p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;flex:1;">
+
+        <!-- Screenshot 1: Booking confirmed + opt-in -->
+        <div style="background:#f8f9fa;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;">
+          <div style="flex:1;background:#fff;position:relative;display:flex;align-items:center;justify-content:center;min-height:0;padding:12px 14px;overflow:hidden;">
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-20deg);font-size:22px;font-weight:800;color:rgba(0,0,0,0.03);text-transform:uppercase;letter-spacing:4px;white-space:nowrap;pointer-events:none;">Vueling POC</div>
+            <div style="width:100%;z-index:2;">
+              <div style="text-align:center;margin-bottom:6px;">
+                <div style="width:30px;height:30px;border-radius:50%;background:#dcfce7;margin:0 auto 5px;display:flex;align-items:center;justify-content:center;">
+                  <div style="width:20px;height:20px;border-radius:50%;background:#22c55e;display:flex;align-items:center;justify-content:center;color:#fff;font-size:10px;font-weight:700;">&#10003;</div>
+                </div>
+                <div style="font-size:11px;font-weight:800;color:var(--dark);">Booking Confirmed!</div>
+                <div style="font-size:8px;color:var(--gray);margin-top:1px;">VY1234 &middot; BCN &rarr; FCO</div>
+                <div style="font-size:7px;color:var(--light-gray);">March 15, 2026 &middot; 08:45</div>
+              </div>
+              <div style="background:#f9fafb;border-radius:6px;padding:4px 8px;text-align:center;margin-bottom:6px;">
+                <div style="font-size:6px;color:var(--gray);text-transform:uppercase;letter-spacing:1px;">Booking Ref</div>
+                <div style="font-size:12px;font-weight:800;color:var(--dark);letter-spacing:2px;font-family:monospace;">VY-M2026A</div>
+              </div>
+              <div style="text-align:center;">
+                <div style="font-size:8px;font-weight:700;color:var(--dark);margin-bottom:3px;">Want us to check you in automatically?</div>
+                <div style="font-size:6.5px;color:var(--gray);margin-bottom:5px;line-height:1.3;">We&rsquo;ll handle everything 48h before your flight.</div>
+                <div style="background:var(--yellow);color:var(--dark);font-size:8px;font-weight:800;padding:6px 12px;border-radius:8px;display:inline-block;">Yes, check me in automatically &#10003;</div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:7px 10px;border-top:1px solid #f0f0f0;">
+            <div style="font-size:10px;font-weight:700;color:var(--dark);">1. Booking confirmed &amp; opt-in</div>
+            <div style="font-size:8px;color:var(--gray);line-height:1.3;">One-tap auto check-in opt-in. Clear, transparent.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 2: Delivery channel selection -->
+        <div style="background:#f8f9fa;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;">
+          <div style="flex:1;background:#fff;position:relative;display:flex;align-items:center;justify-content:center;min-height:0;padding:12px 14px;overflow:hidden;">
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-20deg);font-size:22px;font-weight:800;color:rgba(0,0,0,0.03);text-transform:uppercase;letter-spacing:4px;white-space:nowrap;pointer-events:none;">Vueling POC</div>
+            <div style="width:100%;z-index:2;">
+              <div style="display:flex;align-items:center;gap:3px;margin-bottom:6px;">
+                <div style="width:16px;height:16px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:7px;font-weight:700;color:var(--dark);">1</div>
+                <div style="width:12px;height:2px;background:var(--yellow);"></div>
+                <div style="width:16px;height:16px;border-radius:50%;background:#e5e7eb;display:flex;align-items:center;justify-content:center;font-size:7px;font-weight:700;color:var(--gray);">2</div>
+              </div>
+              <div style="font-size:10px;font-weight:800;color:var(--dark);margin-bottom:1px;">How should we send your boarding pass?</div>
+              <div style="font-size:7px;color:var(--gray);margin-bottom:6px;">Select one or more delivery methods</div>
+              <div style="display:flex;flex-direction:column;gap:4px;">
+                <div style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:7px;border:2px solid var(--yellow);background:rgba(255,209,0,0.05);">
+                  <div style="width:20px;height:20px;border-radius:5px;background:rgba(255,209,0,0.2);display:flex;align-items:center;justify-content:center;font-size:9px;">&#x2709;</div>
+                  <div style="flex:1;"><div style="font-size:8px;font-weight:700;color:var(--dark);">Email</div><div style="font-size:6px;color:var(--gray);">Receive boarding pass via email</div></div>
+                  <div style="width:12px;height:12px;border-radius:3px;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:7px;color:var(--dark);font-weight:700;">&#10003;</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:7px;border:2px solid #e5e7eb;">
+                  <div style="width:20px;height:20px;border-radius:5px;background:#f3f4f6;display:flex;align-items:center;justify-content:center;font-size:9px;">&#x1F4AC;</div>
+                  <div style="flex:1;"><div style="font-size:8px;font-weight:700;color:var(--dark);">SMS</div><div style="font-size:6px;color:var(--gray);">Get a link via text message</div></div>
+                  <div style="width:12px;height:12px;border-radius:3px;border:2px solid #d1d5db;"></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:7px;border:2px solid var(--yellow);background:rgba(255,209,0,0.05);">
+                  <div style="width:20px;height:20px;border-radius:5px;background:rgba(255,209,0,0.2);display:flex;align-items:center;justify-content:center;font-size:9px;">&#x1F514;</div>
+                  <div style="flex:1;"><div style="font-size:8px;font-weight:700;color:var(--dark);">Push Notification</div><div style="font-size:6px;color:var(--gray);">Instant notification on your phone</div></div>
+                  <div style="width:12px;height:12px;border-radius:3px;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:7px;color:var(--dark);font-weight:700;">&#10003;</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:6px;padding:5px 8px;border-radius:7px;border:2px solid #e5e7eb;">
+                  <div style="width:20px;height:20px;border-radius:5px;background:#f3f4f6;display:flex;align-items:center;justify-content:center;font-size:9px;">&#x1F4F1;</div>
+                  <div style="flex:1;"><div style="font-size:8px;font-weight:700;color:var(--dark);">Vueling App</div><div style="font-size:6px;color:var(--gray);">View in the Vueling app wallet</div></div>
+                  <div style="width:12px;height:12px;border-radius:3px;border:2px solid #d1d5db;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:7px 10px;border-top:1px solid #f0f0f0;">
+            <div style="font-size:10px;font-weight:700;color:var(--dark);">2. Delivery channel selection</div>
+            <div style="font-size:8px;color:var(--gray);line-height:1.3;">Multi-select: email, SMS, push, or in-app wallet.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 3: Document upload / scan -->
+        <div style="background:#f8f9fa;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;">
+          <div style="flex:1;background:#fff;position:relative;display:flex;align-items:center;justify-content:center;min-height:0;padding:12px 14px;overflow:hidden;">
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-20deg);font-size:22px;font-weight:800;color:rgba(0,0,0,0.03);text-transform:uppercase;letter-spacing:4px;white-space:nowrap;pointer-events:none;">Vueling POC</div>
+            <div style="width:100%;z-index:2;">
+              <div style="display:flex;align-items:center;gap:3px;margin-bottom:6px;">
+                <div style="width:16px;height:16px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;">
+                  <div style="font-size:7px;color:var(--dark);font-weight:700;">&#10003;</div>
+                </div>
+                <div style="width:12px;height:2px;background:var(--yellow);"></div>
+                <div style="width:16px;height:16px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:7px;font-weight:700;color:var(--dark);">2</div>
+              </div>
+              <div style="font-size:10px;font-weight:800;color:var(--dark);margin-bottom:1px;">Your travel document</div>
+              <div style="font-size:7px;color:var(--gray);margin-bottom:8px;">Passport or national ID &mdash; AI extracts the details</div>
+              <!-- Upload option -->
+              <div style="border:2px dashed #e5e7eb;border-radius:8px;padding:10px;text-align:center;margin-bottom:6px;background:#fafafa;">
+                <div style="width:28px;height:28px;border-radius:8px;background:rgba(255,209,0,0.15);margin:0 auto 5px;display:flex;align-items:center;justify-content:center;font-size:12px;">&#x1F4F7;</div>
+                <div style="font-size:8px;font-weight:700;color:var(--dark);">Scan from photo</div>
+                <div style="font-size:6.5px;color:var(--gray);margin-top:1px;">Upload or take a photo of your document</div>
+              </div>
+              <!-- Divider -->
+              <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+                <div style="flex:1;height:1px;background:#e5e7eb;"></div>
+                <div style="font-size:7px;color:var(--gray);text-transform:uppercase;letter-spacing:1px;">or</div>
+                <div style="flex:1;height:1px;background:#e5e7eb;"></div>
+              </div>
+              <!-- Manual option -->
+              <div style="border:2px dashed #e5e7eb;border-radius:8px;padding:8px 10px;text-align:center;">
+                <div style="font-size:8px;font-weight:700;color:var(--dark);">&#x270F; Enter manually</div>
+                <div style="font-size:6.5px;color:var(--gray);margin-top:1px;">Type your name, passport number &amp; expiry</div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:7px 10px;border-top:1px solid #f0f0f0;">
+            <div style="font-size:10px;font-weight:700;color:var(--dark);">3. Document upload or scan</div>
+            <div style="font-size:8px;color:var(--gray);line-height:1.3;">Photo upload, camera scan, or manual entry.</div>
+          </div>
+        </div>
+
+        <!-- Screenshot 4: AI verification result — extracted data -->
+        <div style="background:#f8f9fa;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;">
+          <div style="flex:1;background:#fff;position:relative;display:flex;align-items:center;justify-content:center;min-height:0;padding:12px 14px;overflow:hidden;">
+            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-20deg);font-size:22px;font-weight:800;color:rgba(0,0,0,0.03);text-transform:uppercase;letter-spacing:4px;white-space:nowrap;pointer-events:none;">Vueling POC</div>
+            <div style="width:100%;z-index:2;">
+              <!-- Success banner -->
+              <div style="display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:7px;background:#f0fdf4;border:1px solid #bbf7d0;margin-bottom:8px;">
+                <div style="width:18px;height:18px;border-radius:50%;background:#22c55e;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <div style="color:#fff;font-size:9px;font-weight:700;">&#10003;</div>
+                </div>
+                <div>
+                  <div style="font-size:8px;font-weight:700;color:#166534;">Document verified</div>
+                  <div style="font-size:6.5px;color:#15803d;">All fields extracted successfully</div>
+                </div>
+              </div>
+              <!-- Extracted fields -->
+              <div style="display:flex;flex-direction:column;gap:3px;">
+                <div style="display:flex;justify-content:space-between;padding:4px 8px;background:#f9fafb;border-radius:4px;">
+                  <div style="font-size:7px;color:var(--gray);font-family:monospace;text-transform:uppercase;">Full name</div>
+                  <div style="font-size:7.5px;font-weight:700;color:var(--dark);">GARC&Iacute;A L&Oacute;PEZ, MAR&Iacute;A</div>
+                </div>
+                <div style="display:flex;justify-content:space-between;padding:4px 8px;background:#f9fafb;border-radius:4px;">
+                  <div style="font-size:7px;color:var(--gray);font-family:monospace;text-transform:uppercase;">Passport no.</div>
+                  <div style="font-size:7.5px;font-weight:700;color:var(--dark);font-family:monospace;">PAA123456</div>
+                </div>
+                <div style="display:flex;justify-content:space-between;padding:4px 8px;background:#f9fafb;border-radius:4px;">
+                  <div style="font-size:7px;color:var(--gray);font-family:monospace;text-transform:uppercase;">Nationality</div>
+                  <div style="font-size:7.5px;font-weight:700;color:var(--dark);">ESP</div>
+                </div>
+                <div style="display:flex;justify-content:space-between;padding:4px 8px;background:#f9fafb;border-radius:4px;">
+                  <div style="font-size:7px;color:var(--gray);font-family:monospace;text-transform:uppercase;">Date of birth</div>
+                  <div style="font-size:7.5px;font-weight:700;color:var(--dark);">1990-05-14</div>
+                </div>
+                <div style="display:flex;justify-content:space-between;padding:4px 8px;background:#f9fafb;border-radius:4px;">
+                  <div style="font-size:7px;color:var(--gray);font-family:monospace;text-transform:uppercase;">Expiry date</div>
+                  <div style="font-size:7.5px;font-weight:700;color:var(--dark);">2027-08-22</div>
+                </div>
+                <div style="display:flex;justify-content:space-between;padding:4px 8px;background:#f9fafb;border-radius:4px;">
+                  <div style="font-size:7px;color:var(--gray);font-family:monospace;text-transform:uppercase;">Country</div>
+                  <div style="font-size:7.5px;font-weight:700;color:var(--dark);">ESP</div>
+                </div>
+              </div>
+              <!-- Action buttons -->
+              <div style="display:flex;gap:6px;margin-top:8px;">
+                <div style="flex:1;text-align:center;padding:5px;border:1px solid #e5e7eb;border-radius:6px;font-size:7px;font-weight:600;color:var(--gray);">Re-scan</div>
+                <div style="flex:1;text-align:center;padding:5px;background:var(--yellow);border-radius:6px;font-size:7px;font-weight:800;color:var(--dark);">Confirm &amp; Continue &#10003;</div>
+              </div>
+            </div>
+          </div>
+          <div style="padding:7px 10px;border-top:1px solid #f0f0f0;">
+            <div style="font-size:10px;font-weight:700;color:var(--dark);">4. AI-verified document data</div>
+            <div style="font-size:8px;color:var(--gray);line-height:1.3;">Gemini 2.0 Flash extracts all fields in real time.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="slide-nav">
+      <button class="arrow">&#8592;</button>
+      <div class="nav-dots">
+        <div class="nav-dot" data-slide="0"></div>
+        <div class="nav-dot" data-slide="1"></div>
+        <div class="nav-dot" data-slide="2"></div>
+        <div class="nav-dot" data-slide="3"></div>
+        <div class="nav-dot" data-slide="4"></div>
+        <div class="nav-dot" data-slide="5"></div>
+        <div class="nav-dot active" data-slide="6"></div>
+        <div class="nav-dot" data-slide="7"></div>
+      </div>
+      <button class="arrow">&#8594;</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SLIDE 7 — POC: PIPELINE & RESULT             -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="slide content-slide" id="slide-7">
+    <div class="vueling-logo"><div class="dot"></div><span class="name">Vueling</span></div>
+    <div class="left-bullets"><div class="ydot"></div><div class="ydot"></div><div class="ydot"></div></div>
+    <div class="right-deco">
+      <div class="gdot"></div><div class="gdot"></div><div class="gdot"></div><div class="gdot"></div><div class="gdot"></div><div class="gdot"></div>
+      <div class="gdot"></div><div class="gdot"></div><div class="gdot"></div><div class="gdot"></div><div class="gdot"></div><div class="gdot"></div>
+      <div class="gdot"></div><div class="gdot"></div><div class="gdot"></div><div class="gdot"></div><div class="gdot"></div><div class="gdot"></div>
+      <div class="gdot"></div><div class="gdot"></div><div class="gdot"></div><div class="gdot"></div><div class="gdot"></div><div class="gdot"></div>
+    </div>
+
+    <div class="slide-body">
+      <div class="section-label">POC in Action &mdash; The Engine</div>
+      <h2>8 stages. Real AI. Under 15 seconds.</h2>
       <p class="lead" style="margin-bottom:14px;">
-        Four screens from the running POC &mdash; <strong>real code, real API calls</strong>.
-        The core flow works end-to-end today. Production features like eligibility gates and DCS integration are the next step.
+        The orchestration pipeline runs all 8 stages automatically. AI verifies documents and generates contextual nudges.
+        Every stage is timed, logged, and observable &mdash; <strong>real code, real API calls to Gemini 2.0 Flash</strong>.
       </p>
 
       <div class="screenshot-grid">
-        <!-- Screenshot 1: Booking data + channel -->
-        <div class="screenshot-card">
-          <div class="sc-preview" style="background:linear-gradient(180deg,#0f172a,#1e293b);padding:16px;">
-            <div class="sc-watermark">Vueling POC</div>
-            <div style="width:100%;z-index:2;">
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
-                <div style="width:10px;height:10px;background:var(--yellow);border-radius:50%;"></div>
-                <div style="font-size:10px;color:#fff;font-weight:700;">Booking data entry</div>
-              </div>
-              <div style="background:rgba(255,255,255,0.06);border-radius:8px;padding:10px;margin-bottom:8px;">
-                <div style="font-size:7px;color:#9ca3af;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px;">Booking reference</div>
-                <div style="font-size:12px;color:#fff;font-weight:700;letter-spacing:1px;">VY-2847-BCN</div>
-              </div>
-              <div style="display:flex;gap:6px;">
-                <div style="flex:1;background:rgba(255,255,255,0.06);border-radius:6px;padding:8px;">
-                  <div style="font-size:6px;color:#9ca3af;text-transform:uppercase;">From</div>
-                  <div style="font-size:11px;color:#fff;font-weight:700;">BCN</div>
-                </div>
-                <div style="flex:1;background:rgba(255,255,255,0.06);border-radius:6px;padding:8px;">
-                  <div style="font-size:6px;color:#9ca3af;text-transform:uppercase;">To</div>
-                  <div style="font-size:11px;color:#fff;font-weight:700;">MAD</div>
-                </div>
-                <div style="flex:1;background:rgba(255,255,255,0.06);border-radius:6px;padding:8px;">
-                  <div style="font-size:6px;color:#9ca3af;text-transform:uppercase;">Date</div>
-                  <div style="font-size:11px;color:#fff;font-weight:700;">03 Mar</div>
-                </div>
-              </div>
-              <div style="display:flex;gap:5px;margin-top:8px;">
-                <span class="mock-pill" style="background:rgba(255,209,0,0.2);color:var(--yellow);">&#10003; Email</span>
-                <span class="mock-pill" style="background:rgba(255,255,255,0.08);color:#9ca3af;">SMS</span>
-                <span class="mock-pill" style="background:rgba(255,255,255,0.08);color:#9ca3af;">Push</span>
-                <span class="mock-pill" style="background:rgba(255,255,255,0.08);color:#9ca3af;">WhatsApp</span>
-              </div>
-            </div>
-          </div>
-          <div class="sc-info">
-            <div class="sc-title">1. Booking &amp; channel selection</div>
-            <div class="sc-desc">After booking, passenger enters data and selects preferred delivery channel for their boarding pass.</div>
-          </div>
-        </div>
-
-        <!-- Screenshot 2: Passport / Identity upload -->
-        <div class="screenshot-card">
-          <div class="sc-preview" style="background:linear-gradient(180deg,#0f172a,#1e293b);padding:16px;">
-            <div class="sc-watermark">Vueling POC</div>
-            <div style="width:100%;z-index:2;">
-              <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
-                <div style="width:10px;height:10px;background:var(--yellow);border-radius:50%;"></div>
-                <div style="font-size:10px;color:#fff;font-weight:700;">Identity document upload</div>
-              </div>
-              <!-- Upload area -->
-              <div style="border:2px dashed rgba(255,209,0,0.3);border-radius:10px;padding:14px;text-align:center;margin-bottom:8px;">
-                <div style="font-size:20px;margin-bottom:4px;">&#x1F4C4;</div>
-                <div style="font-size:8px;color:#fff;font-weight:600;">Upload passport or DNI</div>
-                <div style="font-size:7px;color:#9ca3af;margin-top:2px;">Supported: passport, DNI, ID card</div>
-              </div>
-              <!-- Uploaded status -->
-              <div style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.3);border-radius:6px;padding:8px;display:flex;align-items:center;gap:8px;">
-                <div style="font-size:10px;">&#10003;</div>
-                <div>
-                  <div style="font-size:8px;color:#10b981;font-weight:600;">DNI_maria_garcia.jpg uploaded</div>
-                  <div style="font-size:7px;color:#9ca3af;">Ready for AI verification</div>
-                </div>
-              </div>
-              <div style="display:flex;align-items:center;gap:6px;margin-top:6px;">
-                <div style="width:16px;height:16px;background:rgba(16,185,129,0.2);border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:8px;">&#x1F512;</div>
-                <div style="font-size:7px;color:#9ca3af;">Image processed by AI &middot; never stored</div>
-              </div>
-            </div>
-          </div>
-          <div class="sc-info">
-            <div class="sc-title">2. Passport upload &amp; AI verification</div>
-            <div class="sc-desc">Passenger uploads identity document after booking. Gemini 2.0 extracts data. Image discarded immediately.</div>
-          </div>
-        </div>
-
         <!-- Screenshot 3: Pipeline Running -->
         <div class="screenshot-card">
           <div class="sc-preview" style="background:linear-gradient(180deg,#0f172a,#1e293b);padding:16px;">
             <div class="sc-watermark">Vueling POC</div>
             <div style="width:100%;z-index:2;">
               <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
-                <div style="width:10px;height:10px;background:var(--yellow);border-radius:50%;animation:pulse 1.5s infinite;"></div>
+                <div style="width:10px;height:10px;background:var(--yellow);border-radius:50%;"></div>
                 <div style="font-size:10px;color:#fff;font-weight:700;">Pipeline executing...</div>
                 <div style="margin-left:auto;font-size:8px;color:var(--yellow);font-weight:600;">12.4s</div>
               </div>
@@ -1029,7 +1166,7 @@
           </div>
           <div class="sc-info">
             <div class="sc-title">3. Live pipeline execution</div>
-            <div class="sc-desc">All 8 stages run in real time with visual progress, timing per stage, and live status updates.</div>
+            <div class="sc-desc">All 8 stages run in real time. Each stage shows live status, execution time, and data flowing through. AI stages call Gemini 2.0 Flash in real time.</div>
           </div>
         </div>
 
@@ -1069,14 +1206,15 @@
                 </div>
               </div>
               <div style="background:rgba(255,209,0,0.08);border:1px solid rgba(255,209,0,0.2);border-radius:6px;padding:8px;">
-                <div style="font-size:7px;color:var(--yellow);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px;">&#x2728; AI nudge</div>
+                <div style="font-size:7px;color:var(--yellow);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px;">&#x2728; AI nudge &mdash; configurable LLM prompt</div>
                 <div style="font-size:8px;color:#d1d5db;line-height:1.4;">&ldquo;Mar&iacute;a, your check-in is done! Flying light? Add a 20kg bag for just 29&euro; and skip the airport queue.&rdquo;</div>
+                <div style="font-size:6px;color:#6b7280;margin-top:4px;">Context: destination=FCO, trip_days=5, language=es &middot; Prompt template editable</div>
               </div>
             </div>
           </div>
           <div class="sc-info">
-            <div class="sc-title">4. Boarding pass &amp; configurable AI nudge</div>
-            <div class="sc-desc">Boarding pass with QR + AI nudge powered by configurable Gemini prompts with real passenger context.</div>
+            <div class="sc-title">4. Boarding pass &amp; AI nudge</div>
+            <div class="sc-desc">Full boarding pass with QR code. AI nudge generated by Gemini using configurable prompts with real passenger context (destination, trip, language).</div>
           </div>
         </div>
       </div>
@@ -1091,7 +1229,8 @@
         <div class="nav-dot" data-slide="3"></div>
         <div class="nav-dot" data-slide="4"></div>
         <div class="nav-dot" data-slide="5"></div>
-        <div class="nav-dot active" data-slide="6"></div>
+        <div class="nav-dot" data-slide="6"></div>
+        <div class="nav-dot active" data-slide="7"></div>
       </div>
       <button class="arrow">&#8594;</button>
     </div>
