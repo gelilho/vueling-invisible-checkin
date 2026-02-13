@@ -201,7 +201,7 @@ An orchestration layer that anticipates, decides, and acts before the customer e
 
 The full pitch deck is available as a live interactive presentation:
 
-**[View the Pitch Deck](https://gelilho.github.io/vueling-invisible-checkin/deck/pitch-deck.html)**
+**[View the Pitch Deck](https://gelilho.github.io/vueling-invisible-checkin/deck/Vueling-automatic-checkin-POC-Feb2026.html)**
 
 You can also download it as a PDF:
 1. Open the deck link above in Chrome
