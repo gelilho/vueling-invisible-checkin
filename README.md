@@ -86,17 +86,17 @@ The proof of concept is **built and running**:
 │               App Layer (Next.js)               │
 │        Pages  ·  Layout  ·  API Routes          │
 ├─────────────────────────────────────────────────┤
-│              Components Layer                    │
-│  Pipeline views  ·  Boarding pass  ·  Dashboard  │
+│              Components Layer                   │
+│  Pipeline views  ·  Boarding pass  ·  Dashboard │
 ├─────────────────────────────────────────────────┤
-│             Hooks Layer (Orchestration)           │
-│         usePipeline  ·  useOrchestration         │
+│             Hooks Layer (Orchestration)         │
+│         usePipeline  ·  useOrchestration        │
 ├─────────────────────────────────────────────────┤
-│            Business Logic Layer                   │
-│  Pipeline stages  ·  Gemini AI  ·  Validator     │
+│            Business Logic Layer                 │
+│  Pipeline stages  ·  Gemini AI  ·  Validator    │
 ├─────────────────────────────────────────────────┤
-│             Foundation Layer                      │
-│     Types  ·  Constants  ·  Utils  ·  Data       │
+│             Foundation Layer                    │
+│     Types  ·  Constants  ·  Utils  ·  Data      │
 └─────────────────────────────────────────────────┘
 ```
 
@@ -108,7 +108,7 @@ The proof of concept is **built and running**:
 
 ```
                     ┌──────────────────┐
-                    │  Flight/Passenger │
+                    │  Flight/Passenger│
                     └────────┬─────────┘
                              │
         ┌────────────────────┼────────────────────┐
